@@ -1,0 +1,326 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+html { 
+  overflow-y: scroll; 
+  overflow-x: hidden;
+}
+body
+{
+	background-color: gray;
+	height: 100%;
+}
+.container
+{
+	background-color: white;
+}
+#navbar{
+	background-image: url("../img/headerPlace.png");
+	height: 75px;
+	display: inline-block;
+	width: 100%;
+	padding: 0 20px 0 0;
+
+}
+#dropLink
+{
+    float: right;
+    font-size: 20px;
+    color: white;
+    padding: 20.5px 10px;
+}
+
+
+#email
+{
+	position: fixed;
+	bottom: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	background-color:rgba(8, 151, 0,0.8);
+	padding: 0 10px;
+	visibility: hidden;
+}
+#emailRow
+{
+	padding: 5px 15px;
+}
+#email h3
+{
+	margin: -5px 0 0 0;
+	float: left;
+}
+#emailInput
+{
+	float: right;
+	font-size: 22px;
+}
+#emailButton
+{
+	float: right;
+}
+#emailPop
+{
+	width: 480px;
+	height: 520px;
+	background-color: white;
+	margin: 25px auto;
+	box-shadow: 10px 10px 32px 0px rgba(0,0,0,0.75);
+	display: flex;
+	position: relative;
+	top: 100px;
+}
+#emailPop h1
+{
+	text-align: center;
+	font-style: italic;
+	margin-bottom: 60px	;
+}
+#emailPop input
+{
+	width: 100%;
+	font-size: 20px;
+}
+#emailPopInfo
+{
+	position: absolute;
+	bottom: 20px;
+	width: 87%;
+	margin: auto;
+}
+#borderDiv
+{
+	width: 97%;
+	height: 97%;
+	border: solid 2px black;
+	margin: auto;
+	padding: 0 20px;
+}
+#exitButton{
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	top: -1px;
+	left: -35px;
+	cursor: pointer;
+}
+#topDeal
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 400px;
+	box-shadow: 10px 10px 32px 0px rgba(0,0,0,0.75);
+	width: 90%;
+}
+#tableDiv
+{
+	padding: 0;
+}
+#tableDiv h1
+{
+	background-color: white;
+	text-align: center;
+	height: 45px;
+	margin: 0;
+}
+.row
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#topDeal h1
+{
+	text-align: center;
+}
+#hoursTable
+{
+	width: 100%;
+	text-align: center;
+	height: 355px;
+	float: right;
+	background-color: white;
+}
+#hoursTable th
+{
+	text-align: center;
+	font-size: 20px;
+}
+#hoursTable td
+{
+	border: solid 1px black;
+	width: 50%;
+}
+#mapContainer, #facebookContainer
+{
+	width: 90%;
+	box-shadow: 10px 10px 32px 0px rgba(0,0,0,0.75);
+	background-color: unset;
+}
+#extraLinks
+{
+	background-color: unset;
+	margin-bottom: 0px;
+}
+#extraLinks img
+{
+
+	width: 100%;
+}
+#extraLinks div
+{
+	padding: 0;
+}
+#facebookContainer{
+	background-color: #C9D1E2;
+}
+#facebookIcon
+{
+	height: 400px;
+	float: right;
+	margin: 0;
+			background-color: #3B5998;
+
+}
+#facebookContainer h1
+{
+	margin-bottom: 20px;
+}
+#imageColumn
+{
+		padding-right: 0;
+}
+#facebookButton
+{
+	border: solid 3px #3B5998;
+	width: 160px;
+	height: 60px;
+	line-height: 57px;
+	margin: 40px auto;
+	text-align: center;
+	font-size: 20px;
+	color: white;
+	background-color: #3B5998;
+}
+#facebookButton:hover
+{
+	cursor: pointer;
+	background-color: white;
+	color: #3B5998;
+	font-weight: bold;
+}
+#mailColumn
+{
+	padding: 0;
+	background-color: #efacd3;
+}
+#emailContainer
+{
+	background-color: #efacd3;
+	box-shadow: 10px 10px 32px 0px rgba(0,0,0,0.75);
+	width: 90%;
+
+}
+#emailContainer h3
+{
+	font-size: 25px;
+}
+#mailInput
+{
+	width: 100%;
+	margin-top: 10px;
+	font-size: 20px;
+}
+#emailButton
+{
+	width: 100%;
+	margin: 10px 0 20px;
+}
+h1
+{
+	margin-top: 20px;
+}
+#footer
+{
+	background-color: navy;
+	position: relative;
+	bottom: -20px;
+	margin-top: -40px;
+}
+#topFooter
+{
+	height: 70%;
+	background-color: red;
+	text-align: center;	
+}
+#botFooter
+{
+	min-height: 100px;
+}
+#botFooter h3
+{
+	margin-top: 20px;
+	text-align: center;
+	color: white;
+	margin-bottom: 0;
+}
+#botFooter p
+{
+	text-align: center;
+	color: white;
+}
+#imgLinks img
+{
+	width: 75px;
+	margin: 40px 0;
+}
+#textLinks a
+{
+	width: 20%;
+	font-size: 20px; 
+	margin: 0 10px;
+}
+
+
+
+
+@media screen and (max-width: 1700px)
+{
+
+}
+@media screen and (max-width: 1200px)
+{
+
+}
+@media screen and (max-width: 992px)
+{
+
+		#facebookIcon
+		{
+			margin: 0 25%;
+		}
+		#imageColumn
+		{
+			background-color: #3B5998;
+		}
+		#mailColumn
+		{
+			background-color: #d41c86;
+		}
+}
+@media screen and (max-width: 768px)
+{
+
+			#facebookIcon
+		{
+			margin: 0 14%;
+		}	
+}@media screen and (max-width: 576px)
+{
+	#extraLinks div
+	{
+		margin: 5px;
+	}
+}
