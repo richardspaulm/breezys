@@ -13,11 +13,11 @@
 
 <!--Navigation -->
 <div id="navbar" class="header">
-	<a class="btn" href="index.html" id="dropLink">Specials</a>
-    <a class="btn" href="index.html" id="dropLink">Contact</a>
-    <a class="btn" href="index.html" id="dropLink">About</a>
-    <a class="btn" href="index.html" id="dropLink">Shop</a>
-    <a class="btn" href="index.html" id="dropLink">Services</a>
+	<a class="btn" href="specials.html" id="dropLink">Specials</a>
+    <a class="btn" href="contacts.html" id="dropLink">Contact</a>
+    <a class="btn" href="about.html" id="dropLink">About</a>
+    <a class="btn" href="shop.html" id="dropLink">Shop</a>
+    <a class="btn" href="services.html" id="dropLink">Services</a>
     <a class="btn" href="index.html" id="dropLink">Home</a>
 </div>
 
@@ -48,15 +48,7 @@
   </a>
 </div>
 
-<!-- Deal Row -->
-<div class="container" id="topDeal">
-	<h1>Breezy's wash cards</h1>
-	<div class="row">
-		<h3 class="col-md-4">Holy shit my dudes if you get yourself one of these cards, every 3 washes you buy you'll get one for free. That's like 33% off. Hot diggity</h3>
-		<div class="col-md-4" style="background-color: red"></div>
-		<h3 class="col-md-4">This is a test! Lets see how it works</h3>
-	</div>
-</div>
+
 <!-- Mailing List -->
 <div class="container" id="emailContainer">
 	<div class="row">
@@ -64,8 +56,10 @@
 			<h1>Join Our Mailing List!</h1>
 			<h3>A must for our regular customers! Get the word of your month for special savings each month, and news on any other valuable promotions
 			 we may have! You'll only hear from us when we can bring you an opportunity to save and clean!</h3>
-			<input id="mailInput" placeholder="Enter Your Email Address!"/>
-			<button type="button" class="btn btn-primary" id="emailButton">Submit</button>
+			<form action="post_email.php" method="post">
+			<input id="mailInput" name="email" placeholder="Enter Your Email Address!"/>
+			<button type="submit" class="btn btn-primary" id="emailButton">Submit</button>
+			</form>
 		</div>
 		<div class="col-lg-5" id="mailColumn">
 			<img src="./img/mailIcon.png" id="facebookIcon"/>	
@@ -73,11 +67,20 @@
 	</div>
 </div>
 
+<!-- Deal Row
+<div class="container" id="topDeal">
+	<h1>Breezy's wash cards</h1>
+	<div class="row">
+		<h3 class="col-md-4">Holy shit my dudes if you get yourself one of these cards, every 3 washes you buy you'll get one for free. That's like 33% off. Hot diggity</h3>
+		<div class="col-md-4" style="background-color: red"></div>
+		<h3 class="col-md-4">This is a test! Lets see how it works</h3>
+	</div>
+</div> -->
 <!-- Map Row -->
 <div class="container" id="mapContainer">
 	<div class="row" id="mapRow">
-		<div id="googleMap" class="col-lg-6" style="height: 400px"></div>		
-		<div class="col-lg-6" id="tableDiv">
+
+		<div class="col-lg-5" id="tableDiv">
 			<h1>Main Hours</h1>
 			<table id="hoursTable">
 				<thead>
@@ -88,37 +91,38 @@
 				</thead>
 				<tbody>
 
-					<tr>
+					<tr id="even">
 						<td scope="col">Sunday</td>
 						<td scope="col">Hours</td>
 					</tr>
-					<tr>
+					<tr id="odd">
 						<td scope="col">Monday</td>
 						<td scope="col">Hours</td>
 					</tr>
-					<tr>
+					<tr id="even">
 						<td scope="col">Tuesday</td>
 						<td scope="col">Hours</td>
 					</tr>
-					<tr>
+					<tr id="odd">
 						<td scope="col">Wednesday</td>
 						<td scope="col">Hours</td>
 					</tr>
-					<tr>
+					<tr id="even">
 						<td scope="col">Thursday</td>
 						<td scope="col">Hours</td>
 					</tr>
-					<tr>
+					<tr id="odd">
 						<td scope="col">Friday</td>
 						<td scope="col">Hours</td>
 					</tr>
-					<tr>
+					<tr id="even">
 						<td scope="col">Saturday</td>
 						<td scope="col">Hours</td>
 					</tr>
 				</tbody>
 			</table>
 		</div>
+				<div id="googleMap" class="col-lg-7" style="height: 400px"></div>	
 	</div>
 </div>
 
@@ -139,39 +143,65 @@
 <!-- Extra Links -->
 <div class="fluid-container" id="extraLinks">
 	<div class="row" style="margin: 0">
-		<div class="col-xl-2 col-sm-4">
-			<img src="./img/mats.png" class="img-responsive"/>
+		<div class="col-xl-2 col-sm-4 col-xs-2" id="hoverCont">
+		    <img src="./img/aboutButton.jpg" class="hoverImg" alt="">
+		    <div class="middle"></div>
+		    <div id="hoverText">
+		    	<h1>About</h1>
+		    </div>
 		</div>
-		<div class="col-xl-2 col-sm-4">
-			<img src="./img/mats.png"/>
+		<div class="col-xl-2 col-sm-4" id="hoverCont">
+		    <img src="./img/shopButton.jpg" class="hoverImg" alt="">
+		    <div class="middle"></div>
+		    <div id="hoverText">
+		    	<h1>Shop</h1>
+		    </div>
 		</div>
-		<div class="col-xl-2 col-sm-4">
-			<img src="./img/mats.png"/>
+		<div class="col-xl-2 col-sm-4" id="hoverCont">
+		    <img src="./img/servicesButton.jpg" class="hoverImg" alt="">
+		    <div class="middle"></div>
+		    <div id="hoverText">
+		    	<h1>Services</h1>
+		    </div>
 		</div>
-		<div class="col-xl-2 col-sm-4">
-			<img src="./img/mats.png"/>
+		<div class="col-xl-2 col-sm-4" id="hoverCont">
+		    <img src="./img/phoneicon.png" class="hoverImg" alt="">
+		    <div class="middle"></div>
+		    <div id="hoverText">
+		    	<h1>Contact</h1>
+		    </div>
 		</div>
-		<div class="col-xl-2 col-sm-4">
-			<img src="./img/mats.png"/>
+		<div class="col-xl-2 col-sm-4" id="hoverCont">
+		    <img src="./img/facebookBut.png" class="hoverImg" alt="">
+		    <div class="middle"></div>
+		    <div id="hoverText">
+		    	<h1>Facebook</h1>
+		    </div>
 		</div>
-		<div class="col-xl-2 col-sm-4">
-			<img src="./img/mats.png"/>
+		<div class="col-xl-2 col-sm-4" id="hoverCont">
+		    <img src="./img/emailButton.png" class="hoverImg" alt="">
+		    <div class="middle"></div>
+		    <div id="hoverText">
+		    	<h1>Email</h1>
+		    </div>
 		</div>
 	</div>
 </div>
+
+<!--Footer-->
 <div class="fluid-container" id="footer">
 	<div class="fluid-container" id="topFooter">
 		<div class="row">
 			<div class="col-lg-3">
 				<h1>Breezys Car Wash</h1>
-				<h3>666 Hell Street - Bradenton, FL - 34275</h3>
+				<h3>6310 14th St W Bradenton, FL 34207</h3>
 			</div>
 			<div class="col-lg-6">
 				<div id="imgLinks">
-					<img src="./img/roundFacebook.png"/>
-					<img src="./img/roundFacebook.png"/>
-					<img src="./img/roundFacebook.png"/>
-					<img src="./img/roundFacebook.png"/>
+					<a href="http://www.facebook.com/breezysbradenton"><img src="./img/roundFacebook.png"/></a>
+					<img src="./img/emailRound.png" onclick="ShowEmail()"/>
+					<a href="https://www.google.com/maps/place/Breezy's+Car+Wash+and+Custom+Detail+Center/@27.4290293,-82.5762456,15z/data=!4m5!3m4!1s0x0:0xc775685e0b455b47!8m2!3d27.4290293!4d-82.5762456"><img src="./img/googleRound.png"/></a>
+					<a href="index.html"><img src="./img/homeIcon.png"/></a>
 				</div>
 				<div id="textLinks">
 					<a href="#">Home</a>
@@ -183,9 +213,9 @@
 			</div>
 			<div class="col-lg-3">
 				<h1>Contact Us</h1>
-				<p>Telephone: 666-666-6666</p>
-				<p>Email: HelloSatan@Lucifer.com</p>
-				<p>Facebook: Facebook.com</p>
+				<p>Telephone: 941-753-6665</p>
+				<p>Email: breezyssuperiorcarwash@gmail.com</p>
+				<p>Facebook: <a href= "https://facebook.com/BreezysBradenton/">Facebook.Com/BreezysBradenton</a></p>
 			</div>
 		</div>
 	</div>
@@ -194,8 +224,9 @@
 		<p>&#169; Breezy's Car Wash 2018 | All Rights Reserved</p>
 	</div>
 </div>
-<!--Email Border-->
-<!--<div id="email" class="fluid-container">
+
+<!--Email Popup-->
+<div id="email" class="fluid-container">
 	<div id="emailPop">
 		<img src="./img/exit3.png" id="exitButton" onclick="CloseEmail()" />
 		<div id="borderDiv">
@@ -207,14 +238,20 @@
 		</form>
 		</div>
 	</div>
-</div>	-->
+</div>	
 <script>
 function myMap() {
 var mapProp= {
-    center:new google.maps.LatLng(51.508742,-0.120850),
-    zoom:5,
+    center:new google.maps.LatLng(27.4290293,-82.5762456),
+    zoom:15
 };
+
 var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        var marker = new google.maps.Marker({
+          position:new google.maps.LatLng(27.4290099,-82.5762456),
+          map: map,
+          title: 'Hello World!'
+        });
 }
 </script>
 <script src="./js/mainScript.js"></script>

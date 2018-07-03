@@ -6,3 +6,7 @@ function CloseEmail()
 {
 	emailDiv.style.visibility = "hidden";
 }
+function ShowEmail()
+{
+	emailDiv.style.visibility="visible";
+}

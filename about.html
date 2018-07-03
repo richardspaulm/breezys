@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Breezy's Car Wash</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/styleSheet.css">
+
+</head>
+<body>
+
+<!--Navigation -->
+<div id="navbar" class="header">
+	<a class="btn" href="specials.html" id="dropLink">Specials</a>
+    <a class="btn" href="contacts.html" id="dropLink">Contact</a>
+    <a class="btn" href="about.html" id="dropLink">About</a>
+    <a class="btn" href="shop.html" id="dropLink">Shop</a>
+    <a class="btn" href="services.html" id="dropLink">Services</a>
+    <a class="btn" href="index.html" id="dropLink">Home</a>
+</div>
+<!-- Who Are We-->
+<div class="container" id="whoContainer">
+	<div class="row">
+		<div class="col-lg-4">
+			<h3>30 Years!</h3>
+			<p>For over 30 years now Breezy's has been bringing quality service and smiles to Bradenton. Family owned and operated, we hope to keep that tradition going as long as possible! Come say hello if you see us around the wash!</p>
+
+		</div>
+		<div class="col-lg-8">
+			<img src="./img/30years.jpg" style="height: 400px; overflow-x: hidden; width: 100%;" />
+		</div>
+	</div>
+</div>
+<!--Where are we?-->
+<div class="container" id="aboutMapContainer">
+	<div class="row">
+	<div id="googleMap" class="col-lg-7" style="height: 400px"></div>
+	<div class="col-lg-5">
+		<h3>Where Are We?</h3>
+		<p>You can find us at 6310 14th St. West Bradenton, FL! Right by the intersection of 63rd Ave W, and US Highway 41</p>
+		<p><span class="highlight">Telephone:</span> 941-753-6665</p>
+		<p><span class="highlight">Email:</span> breezyssuperiorcarwash@gmail.com</p>
+		<p><span class="highlight">Facebook:</span> <a href= "https://facebook.com/BreezysBradenton/">facebook.com/BreezysBradenton</a></p>
+	</div>	
+</div>
+</div>
+
+
+<!--Footer-->
+<div class="fluid-container" id="footer">
+	<div class="fluid-container" id="topFooter">
+		<div class="row">
+			<div class="col-lg-3">
+				<h1>Breezys Car Wash</h1>
+				<h3>6310 14th St W Bradenton, FL 34207</h3>
+			</div>
+			<div class="col-lg-6">
+				<div id="imgLinks">
+					<a href="http://www.facebook.com/breezysbradenton"><img src="./img/roundFacebook.png"/></a>
+					<img src="./img/emailRound.png" onclick="ShowEmail()"/>
+					<a href="https://www.google.com/maps/place/Breezy's+Car+Wash+and+Custom+Detail+Center/@27.4290293,-82.5762456,15z/data=!4m5!3m4!1s0x0:0xc775685e0b455b47!8m2!3d27.4290293!4d-82.5762456"><img src="./img/googleRound.png"/></a>
+					<a href="index.html"><img src="./img/homeIcon.png"/></a>
+				</div>
+				<div id="textLinks">
+					<a href="#">Home</a>
+					<a href="#">Services</a>
+					<a href="#">Shop</a>
+					<a href="#">About</a>
+					<a href="#">Specials</a>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<h1>Contact Us</h1>
+				<p>Telephone: 941-753-6665</p>
+				<p>Email: breezyssuperiorcarwash@gmail.com</p>
+				<p>Facebook: <a href= "https://facebook.com/BreezysBradenton/">Facebook.Com/BreezysBradenton</a></p>
+			</div>
+		</div>
+	</div>
+	<div class="fluid-container" id="botFooter">
+		<h3>Fast, Friendly, Family Service With &#10084; In Bradenton, Florida</h3>
+		<p>&#169; Breezy's Car Wash 2018 | All Rights Reserved</p>
+	</div>
+</div>
+<!--Email Border-->
+
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(27.4290293,-82.5762456),
+    zoom:15
+};
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        var marker = new google.maps.Marker({
+          position:new google.maps.LatLng(27.4290099,-82.5762456),
+          map: map,
+          title: 'Hello World!'
+        });
+}
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> 
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAr3Vp3cyiXPzkbDHRcyj_bmSSP8AzI5TI&callback=myMap"></script>
+</body>
+</html>
