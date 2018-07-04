@@ -6,18 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="css/styleSheet.css">
+<link rel="icon" href="./img/flaviconFlamingo.png">
 
 </head>
 <body>
 
 <!--Navigation -->
-<div id="navbar" class="header">
-	<a class="btn" href="specials.html" id="dropLink">Specials</a>
-    <a class="btn" href="contacts.html" id="dropLink">Contact</a>
-    <a class="btn" href="about.html" id="dropLink">About</a>
-    <a class="btn" href="shop.html" id="dropLink">Shop</a>
-    <a class="btn" href="services.html" id="dropLink">Services</a>
-    <a class="btn" href="index.html" id="dropLink">Home</a>
+<div class="fluid-container" id="navContainer">
+	<div id="navbar" class="header">
+		<div class="row" id="navRow">
+			<div class="col-lg-5" id="imgCol">
+				<img src="./img/headerImg.png" id="headImg"/>
+			</div>
+			<div class="col-lg-7">
+				<div class="row" id="buttonRow">
+					<a class="btn col-sm-2 order-last" href="specials.html" id="dropLink">Specials</a>
+				    <a class="btn col-sm-2 order-fifth" href="contacts.html" id="dropLink">Contact</a>
+				    <a class="btn col-sm-2 order-fourth" href="about.html" id="dropLink">About</a>
+				    <a class="btn col-sm-2 order-third" href="shop.html" id="dropLink">Shop</a>
+				    <a class="btn col-sm-2 order-second" href="services.html" id="dropLink">Services</a>
+				    <a class="btn col-sm-2 order-first" href="index.html" id="dropLink">Home</a>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 
@@ -38,11 +50,11 @@
 					<a href="index.html"><img src="./img/homeIcon.png"/></a>
 				</div>
 				<div id="textLinks">
-					<a href="#">Home</a>
-					<a href="#">Services</a>
-					<a href="#">Shop</a>
-					<a href="#">About</a>
-					<a href="#">Specials</a>
+					<a href="index.html">Home</a>
+					<a href="services.html">Services</a>
+					<a href="shop.html">Shop</a>
+					<a href="about.html">About</a>
+					<a href="specials.html">Specials</a>
 				</div>
 			</div>
 			<div class="col-lg-3">
@@ -58,12 +70,26 @@
 		<p>&#169; Breezy's Car Wash 2018 | All Rights Reserved</p>
 	</div>
 </div>
-<!--Email Border-->
 
+<!--Email Popup-->
+<div id="email" class="fluid-container">
+	<div id="emailPop">
+		<img src="./img/exit3.png" id="exitButton" onclick="CloseEmail()" />
+		<div id="borderDiv">
+		<h1>Thank You For Browsing Our Site!</h1>
+		<h3>Join our mailing list for special offers and deals. We promise not to bother you with anything but savings!</h3>
+		<form id="emailPopInfo" action="post_email.php" method="post">
+			<input id="emailPopInput" name="email"/>
+			<button type="submit" class="btn btn-primary" id="emailButton">Submit</button>
+		</form>
+		</div>
+	</div>
 </div>	
+
+</div>
+<script src="./js/subScript.js"></script>	
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAr3Vp3cyiXPzkbDHRcyj_bmSSP8AzI5TI&callback=myMap"></script>
 </body>
 </html>

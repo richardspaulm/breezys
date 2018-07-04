@@ -7,25 +7,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="css/styleSheet.css">
+<link rel="icon" href="./img/flaviconFlamingo.png">
 
 </head>
 <body>
 
 <!--Navigation -->
-<div id="navbar" class="header">
-	<a class="btn" href="specials.html" id="dropLink">Specials</a>
-    <a class="btn" href="contacts.html" id="dropLink">Contact</a>
-    <a class="btn" href="about.html" id="dropLink">About</a>
-    <a class="btn" href="shop.html" id="dropLink">Shop</a>
-    <a class="btn" href="services.html" id="dropLink">Services</a>
-    <a class="btn" href="index.html" id="dropLink">Home</a>
+<div class="fluid-container" id="navContainer">
+	<div id="navbar" class="header">
+		<div class="row" id="navRow">
+			<div class="col-lg-5" id="imgCol">
+				<img src="./img/headerImg.png" id="headImg"/>
+			</div>
+			<div class="col-lg-7">
+				<div class="row" id="buttonRow">
+					<a class="btn col-sm-2 order-last" href="specials.html" id="dropLink">Specials</a>
+				    <a class="btn col-sm-2 order-fifth" href="contacts.html" id="dropLink">Contact</a>
+				    <a class="btn col-sm-2 order-fourth" href="about.html" id="dropLink">About</a>
+				    <a class="btn col-sm-2 order-third" href="shop.html" id="dropLink">Shop</a>
+				    <a class="btn col-sm-2 order-second" href="services.html" id="dropLink">Services</a>
+				    <a class="btn col-sm-2 order-first" href="index.html" id="dropLink">Home</a>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 
-
-
-
 <!-- Carousel -->
+<div class="fluid-container" style="background-color: gray;">
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -35,7 +45,7 @@
       <img class="d-block w-100" src="./img/morePrices.jpg" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="./img/price.jpg" alt="Third slide">
+      <img class="d-block w-100" src="./img/30YearsCarousel.jpg" alt="Third slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -47,7 +57,7 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-
+</div>
 
 <!-- Mailing List -->
 <div class="container" id="emailContainer">
@@ -145,45 +155,45 @@
 	<div class="row" style="margin: 0">
 		<div class="col-xl-2 col-sm-4 col-xs-2" id="hoverCont">
 		    <img src="./img/aboutButton.jpg" class="hoverImg" alt="">
-		    <div class="middle"></div>
+		    <a href="about.html"><div class="middle"></div>
 		    <div id="hoverText">
 		    	<h1>About</h1>
-		    </div>
+		    </div></a>
 		</div>
 		<div class="col-xl-2 col-sm-4" id="hoverCont">
-		    <img src="./img/shopButton.jpg" class="hoverImg" alt="">
+		    <a href="shop.html"><img src="./img/shopButton.jpg" class="hoverImg" alt="">
 		    <div class="middle"></div>
 		    <div id="hoverText">
 		    	<h1>Shop</h1>
-		    </div>
+		    </div></a>
 		</div>
 		<div class="col-xl-2 col-sm-4" id="hoverCont">
 		    <img src="./img/servicesButton.jpg" class="hoverImg" alt="">
-		    <div class="middle"></div>
+		    <a href="services.html"><div class="middle"></div>
 		    <div id="hoverText">
 		    	<h1>Services</h1>
-		    </div>
+		    </div></a>
 		</div>
 		<div class="col-xl-2 col-sm-4" id="hoverCont">
 		    <img src="./img/phoneicon.png" class="hoverImg" alt="">
-		    <div class="middle"></div>
+		    <a href="contacts.html"><div class="middle"></div>
 		    <div id="hoverText">
 		    	<h1>Contact</h1>
-		    </div>
+		    </div></a>
 		</div>
 		<div class="col-xl-2 col-sm-4" id="hoverCont">
-		    <img src="./img/facebookBut.png" class="hoverImg" alt="">
+		    <a href="http://www.facebook.com/breezysbradenton/html"><img src="./img/facebookBut.png" class="hoverImg" alt="">
 		    <div class="middle"></div>
 		    <div id="hoverText">
 		    	<h1>Facebook</h1>
-		    </div>
+		    </div></a>
 		</div>
 		<div class="col-xl-2 col-sm-4" id="hoverCont">
-		    <img src="./img/emailButton.png" class="hoverImg" alt="">
+		    <div onclick="ShowEmail()"><img src="./img/emailButton.png" class="hoverImg" alt="">
 		    <div class="middle"></div>
 		    <div id="hoverText">
 		    	<h1>Email</h1>
-		    </div>
+		    </div></div>
 		</div>
 	</div>
 </div>
@@ -204,11 +214,11 @@
 					<a href="index.html"><img src="./img/homeIcon.png"/></a>
 				</div>
 				<div id="textLinks">
-					<a href="#">Home</a>
-					<a href="#">Services</a>
-					<a href="#">Shop</a>
-					<a href="#">About</a>
-					<a href="#">Specials</a>
+					<a href="index.html">Home</a>
+					<a href="services.html">Services</a>
+					<a href="shop.html">Shop</a>
+					<a href="about.html">About</a>
+					<a href="specials.html">Specials</a>
 				</div>
 			</div>
 			<div class="col-lg-3">
@@ -232,9 +242,9 @@
 		<div id="borderDiv">
 		<h1>Thank You For Browsing Our Site!</h1>
 		<h3>Join our mailing list for special offers and deals. We promise not to bother you with anything but savings!</h3>
-		<form id="emailPopInfo">
-			<input id="emailPopInput"/>
-			<button type="button" class="btn btn-primary" id="emailButton">Submit</button>
+		<form id="emailPopInfo" action="post_email.php" method="post">
+			<input id="emailPopInput" name="email"/>
+			<button type="submit" class="btn btn-primary" id="emailButton">Submit</button>
 		</form>
 		</div>
 	</div>
